@@ -12,7 +12,7 @@ Container(mobileApp, "Mobile Application", "React", "ui")
 Container(gateway, "API Gateway", "", "proxy")
 Container(paymentProxy, "PaymentProxy", "", "proxy")
 Container(profile, "Profile", "", "proxy")
-Container(cinemaCatalog, "CinemaCatalog", "", "proxy")
+Container(cinemaCatalog, "Movies", "", "proxy")
 Container(core, "Core", "", "proxy")
 Container(database, "Database", "PostgreSQL", "Сохранение данных профиля")
 

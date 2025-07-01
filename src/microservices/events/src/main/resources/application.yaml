@@ -1,0 +1,30 @@
+spring:
+  kafka:
+    enabled: ${KAFKA_ENABLE:true}
+    bootstrap-servers:        ${KAFKA_BROKERS:localhost:9092}
+    consumer:
+      auto-offset-reset:        ${KAFKA_CONSUMER_AUTO_OFFSET_RESET:earliest}
+      max-poll-interval-ms:     ${KAFKA_CONSUMER_MAX_POLL_INTERVAL:5000}
+      bootstrap-servers:        ${KAFKA_BROKERS:localhost:9092}
+      topic:                    ${KAFKA_CONSUMER_TOPIC:user-events}
+      partition:                ${KAFKA_CONSUMER_PARTITION:0}
+      group-id:                 ${KAFKA_CONSUMER_GROUP_ID:test_group}
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: '*'
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        acks: 1
+        spring:
+          json:
+            add:
+              type:
+                headers: false
+server:
+  port: ${PORT:8090}
