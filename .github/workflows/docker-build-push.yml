@@ -16,6 +16,7 @@ env:
   MOVIES_SERVICE_IMAGE_NAME: ${{ github.repository }}/movies-service
   EVENTS_SERVICE_IMAGE_NAME: ${{ github.repository }}/events-service
   PROXY_SERVICE_IMAGE_NAME: ${{ github.repository }}/proxy-service
+  TEST_TAG: user/app:test
 
 jobs:
   build-and-push:
@@ -71,6 +72,10 @@ jobs:
             type=sha,format=short
             type=ref,event=branch
             latest
+
+      - name: Test
+        run: |
+          docker run --rm ${{ env.TEST_TAG }}
 
       - name: Build and push Movies Service Docker image
         uses: docker/build-push-action@v4
