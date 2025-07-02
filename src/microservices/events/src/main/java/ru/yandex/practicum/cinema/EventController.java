@@ -3,6 +3,7 @@ package ru.yandex.practicum.cinema;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,7 +36,7 @@ public class EventController implements ApiApiDelegate {
         send(userEvent);
         EventResponse body = new EventResponse();
         body.status("success");
-        return ResponseEntity.accepted().body(body);
+        return ResponseEntity.status(HttpStatus.CREATED).body(body);
     }
 
     @Override
@@ -43,7 +44,7 @@ public class EventController implements ApiApiDelegate {
         send(paymentEvent);
         EventResponse body = new EventResponse();
         body.status("success");
-        return ResponseEntity.accepted().body(body);
+        return ResponseEntity.status(HttpStatus.CREATED).body(body);
     }
 
     @Override
@@ -51,7 +52,7 @@ public class EventController implements ApiApiDelegate {
         send(movieEvent);
         EventResponse body = new EventResponse();
         body.status("success");
-        return ResponseEntity.accepted().body(body);
+        return ResponseEntity.status(HttpStatus.CREATED).body(body);
     }
 
     public void send(Object string) {
