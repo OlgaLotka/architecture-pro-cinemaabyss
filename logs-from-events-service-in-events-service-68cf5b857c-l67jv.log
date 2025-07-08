@@ -1,0 +1,209 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.8.RELEASE)[0;39m
+
+[2m2025-07-07 14:26:43.339[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mru.yandex.practicum.cinema.Application  [0;39m [2m:[0;39m Starting Application v1.0-SNAPSHOT on events-service-68cf5b857c-l67jv with PID 1 (/opt/app/events-service.jar started by root in /)
+[2m2025-07-07 14:26:43.428[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mru.yandex.practicum.cinema.Application  [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (jar:file:/opt/app/events-service.jar!/BOOT-INF/lib/tomcat-embed-core-9.0.41.jar!/)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[2m2025-07-07 14:26:53.726[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8082 (http)
+[2m2025-07-07 14:26:53.748[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2025-07-07 14:26:53.748[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2m2025-07-07 14:26:54.232[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2025-07-07 14:26:54.232[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 10102 ms
+[2m2025-07-07 14:27:01.342[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2025-07-07 14:27:06.037[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.k.clients.consumer.ConsumerConfig   [0;39m [2m:[0;39m ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2m2025-07-07 14:27:07.426[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.k.clients.consumer.ConsumerConfig   [0;39m [2m:[0;39m The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+[2m2025-07-07 14:27:07.427[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.k.clients.consumer.ConsumerConfig   [0;39m [2m:[0;39m The configuration 'spring.deserializer.value.delegate.class' was supplied but isn't a known config.
+[2m2025-07-07 14:27:07.432[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.kafka.common.utils.AppInfoParser    [0;39m [2m:[0;39m Kafka version: 2.5.1
+[2m2025-07-07 14:27:07.432[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.kafka.common.utils.AppInfoParser    [0;39m [2m:[0;39m Kafka commitId: 0efa8fb0f4c73d92
+[2m2025-07-07 14:27:07.432[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.kafka.common.utils.AppInfoParser    [0;39m [2m:[0;39m Kafka startTimeMs: 1751898427427
+[2m2025-07-07 14:27:07.435[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.k.clients.consumer.KafkaConsumer    [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Subscribed to topic(s): user-events
+[2m2025-07-07 14:27:07.436[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.c.ThreadPoolTaskScheduler         [0;39m [2m:[0;39m Initializing ExecutorService
+[2m2025-07-07 14:27:07.634[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8082 (http) with context path ''
+[2m2025-07-07 14:27:07.827[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[           main][0;39m [36mru.yandex.practicum.cinema.Application  [0;39m [2m:[0;39m Started Application in 27.991 seconds (JVM running for 33.84)
+[2m2025-07-07 14:27:09.526[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36morg.apache.kafka.clients.Metadata       [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Cluster ID: yBDfjXP2QaKxTC08WRhy0A
+[2m2025-07-07 14:27:10.761[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+[2m2025-07-07 14:27:10.765[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] (Re-)joining group
+[2m2025-07-07 14:27:10.926[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+[2m2025-07-07 14:27:10.926[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] (Re-)joining group
+[2m2025-07-07 14:27:11.027[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Finished assignment for group at generation 1: {consumer-test_group-1-d2229694-3254-4956-82bb-480f7f05ddb8=Assignment(partitions=[user-events-0])}
+[2m2025-07-07 14:27:11.225[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Successfully joined group with generation 1
+[2m2025-07-07 14:27:11.325[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Adding newly assigned partitions: user-events-0
+[2m2025-07-07 14:27:11.348[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Found no committed offset for partition user-events-0
+[2m2025-07-07 14:27:11.440[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.SubscriptionState   [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Resetting offset for partition user-events-0 to offset 0.
+[2m2025-07-07 14:27:11.527[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.s.k.l.KafkaMessageListenerContainer   [0;39m [2m:[0;39m test_group: partitions assigned: [user-events-0]
+[2m2025-07-07 14:27:12.410[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2025-07-07 14:27:12.411[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2025-07-07 14:27:12.508[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 97 ms
+[2m2025-07-07 14:39:06.080[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-9][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 6, column: 2]]
+[2m2025-07-07 14:39:06.498[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[io-8082-exec-10][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+[2m2025-07-07 14:39:06.713[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-1][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 20]]
+[2m2025-07-07 14:46:49.510[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-3][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 6, column: 2]]
+[2m2025-07-07 14:46:49.729[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-4][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+[2m2025-07-07 14:46:50.041[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-5][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 20]]
+[2m2025-07-07 14:47:34.394[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-4][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 6, column: 2]]
+[2m2025-07-07 14:47:34.626[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-5][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+[2m2025-07-07 14:47:34.844[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-6][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 20]]
+[2m2025-07-07 14:58:37.949[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-8][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 6, column: 2]]
+[2m2025-07-07 14:58:38.183[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-9][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+[2m2025-07-07 14:58:38.427[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[io-8082-exec-10][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 20]]
+[2m2025-07-07 16:23:14.323[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ad | test_group][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+[2m2025-07-07 16:23:15.509[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.kafka.clients.FetchSessionHandler   [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Error sending fetch request (sessionId=234055652, epoch=3865) to node 1: {}.
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+[2m2025-07-07 16:23:15.756[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+[2m2025-07-07 16:23:19.118[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Attempt to heartbeat failed for since member id consumer-test_group-1-d2229694-3254-4956-82bb-480f7f05ddb8 is not valid.
+[2m2025-07-07 16:23:19.124[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+[2m2025-07-07 16:23:19.125[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Lost previously assigned partitions user-events-0
+[2m2025-07-07 16:23:19.129[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.s.k.l.KafkaMessageListenerContainer   [0;39m [2m:[0;39m test_group: partitions lost: [user-events-0]
+[2m2025-07-07 16:23:19.130[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.s.k.l.KafkaMessageListenerContainer   [0;39m [2m:[0;39m test_group: partitions revoked: [user-events-0]
+[2m2025-07-07 16:23:19.206[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] (Re-)joining group
+[2m2025-07-07 16:23:19.435[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Attempt to heartbeat failed for since member id consumer-test_group-1-d2229694-3254-4956-82bb-480f7f05ddb8 is not valid.
+[2m2025-07-07 16:23:19.513[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+[2m2025-07-07 16:23:19.514[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] (Re-)joining group
+[2m2025-07-07 16:23:19.627[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Finished assignment for group at generation 3: {consumer-test_group-1-f0e969e6-cb8f-4c3b-a977-a960d83fec36=Assignment(partitions=[user-events-0])}
+[2m2025-07-07 16:23:20.021[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Successfully joined group with generation 3
+[2m2025-07-07 16:23:20.028[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Adding newly assigned partitions: user-events-0
+[2m2025-07-07 16:23:20.125[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Found no committed offset for partition user-events-0
+[2m2025-07-07 16:23:20.207[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.SubscriptionState   [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Resetting offset for partition user-events-0 to offset 0.
+[2m2025-07-07 16:23:20.208[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.s.k.l.KafkaMessageListenerContainer   [0;39m [2m:[0;39m test_group: partitions assigned: [user-events-0]
+[2m2025-07-07 16:47:45.669[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.kafka.clients.FetchSessionHandler   [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Error sending fetch request (sessionId=980744819, epoch=1221) to node 1: {}.
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+[2m2025-07-07 16:47:45.671[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ad | test_group][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+[2m2025-07-07 16:47:47.463[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+[2m2025-07-07 16:47:47.771[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Attempt to heartbeat failed for since member id consumer-test_group-1-f0e969e6-cb8f-4c3b-a977-a960d83fec36 is not valid.
+[2m2025-07-07 16:47:47.772[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+[2m2025-07-07 16:47:47.773[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Lost previously assigned partitions user-events-0
+[2m2025-07-07 16:47:47.773[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.s.k.l.KafkaMessageListenerContainer   [0;39m [2m:[0;39m test_group: partitions lost: [user-events-0]
+[2m2025-07-07 16:47:47.773[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.s.k.l.KafkaMessageListenerContainer   [0;39m [2m:[0;39m test_group: partitions revoked: [user-events-0]
+[2m2025-07-07 16:47:47.773[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] (Re-)joining group
+[2m2025-07-07 16:47:47.869[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+[2m2025-07-07 16:47:47.871[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] (Re-)joining group
+[2m2025-07-07 16:47:48.700[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Finished assignment for group at generation 5: {consumer-test_group-1-2cda450a-946f-441a-8378-6185bf14b5ee=Assignment(partitions=[user-events-0])}
+[2m2025-07-07 16:47:48.757[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.AbstractCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Successfully joined group with generation 5
+[2m2025-07-07 16:47:48.758[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Adding newly assigned partitions: user-events-0
+[2m2025-07-07 16:47:48.787[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.ConsumerCoordinator [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Found no committed offset for partition user-events-0
+[2m2025-07-07 16:47:48.975[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.a.k.c.c.internals.SubscriptionState   [0;39m [2m:[0;39m [Consumer clientId=consumer-test_group-1, groupId=test_group] Resetting offset for partition user-events-0 to offset 0.
+[2m2025-07-07 16:47:48.976[0;39m [32m INFO[0;39m [35m1[0;39m [2m---[0;39m [2m[ntainer#0-0-C-1][0;39m [36mo.s.k.l.KafkaMessageListenerContainer   [0;39m [2m:[0;39m test_group: partitions assigned: [user-events-0]
+[2m2025-07-07 16:54:10.374[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-5][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[2m2025-07-07 17:01:09.531[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-1][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 18]]
+[2m2025-07-07 17:16:49.942[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-4][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 6, column: 2]]
+[2m2025-07-07 17:16:50.282[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-5][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+[2m2025-07-07 17:16:50.730[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-6][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 20]]
+[2m2025-07-07 18:12:05.416[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-9][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 6, column: 2]]
+[2m2025-07-07 18:12:05.639[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[io-8082-exec-10][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+[2m2025-07-07 18:12:05.859[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-1][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 20]]
+[2m2025-07-07 18:18:48.677[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-4][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 6, column: 2]]
+[2m2025-07-07 18:18:48.894[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-5][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+[2m2025-07-07 18:18:49.093[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-6][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 20]]
+[2m2025-07-07 18:19:57.877[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-8][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 6, column: 2]]
+[2m2025-07-07 18:19:58.100[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[nio-8082-exec-9][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+[2m2025-07-07 18:19:58.317[0;39m [33m WARN[0;39m [35m1[0;39m [2m---[0;39m [2m[io-8082-exec-10][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (',' (code 44)): expected a value
+ at [Source: (PushbackInputStream); line: 2, column: 20]]

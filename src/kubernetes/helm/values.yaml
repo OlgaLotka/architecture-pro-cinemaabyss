@@ -26,7 +26,7 @@ database:
       memory: 512Mi
   persistence:
     enabled: true
-    size: 10Gi
+    size: 1Gi
     accessMode: ReadWriteOnce
 
 # Monolith configuration
@@ -35,7 +35,7 @@ monolith:
   image:
     repository: ghcr.io/olgalotka/architecture-pro-cinemaabyss/monolith
     tag: latest
-    pullPolicy: Always
+    pullPolicy: Never
   replicas: 1
   resources:
     limits:
@@ -55,7 +55,7 @@ proxyService:
   image:
     repository: ghcr.io/olgalotka/architecture-pro-cinemaabyss/proxy-service
     tag: latest
-    pullPolicy: Always
+    pullPolicy: Never
   replicas: 1
   resources:
     limits:
@@ -75,7 +75,7 @@ moviesService:
   image:
     repository: ghcr.io/olgalotka/architecture-pro-cinemaabyss/movies-service
     tag: latest
-    pullPolicy: Always
+    pullPolicy: Never
   replicas: 1
   resources:
     limits:
@@ -95,7 +95,7 @@ eventsService:
   image:
     repository: ghcr.io/olgalotka/architecture-pro-cinemaabyss/events-service
     tag: latest
-    pullPolicy: Always
+    pullPolicy: Never
   replicas: 1
   resources:
     limits:
@@ -126,7 +126,7 @@ kafka:
       memory: 512Mi
   persistence:
     enabled: true
-    size: 5Gi
+    size: 1Gi
     accessMode: ReadWriteOnce
   topics:
     - name: movie-events
@@ -177,6 +177,14 @@ ingress:
           pathType: Prefix
           service: events-service
           port: 8082
+        - path: /api/movies
+          pathType: Prefix
+          service: movies-service
+          port: 8081
+        - path: /api/monolith
+          pathType: Prefix
+          service: monolith
+          port: 8080
 
 # Application configuration
 config:
