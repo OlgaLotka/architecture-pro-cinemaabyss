@@ -23,7 +23,7 @@ spec:
       containers:
         - name: proxy-service
           image: ghcr.io/olgalotka/architecture-pro-cinemaabyss/proxy-service:latest
-          imagePullPolicy: Never
+          imagePullPolicy: NotIfPresent
           ports:
             - containerPort: 8000
           env:
